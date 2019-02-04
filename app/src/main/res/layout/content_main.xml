@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/color_bg_main"
+    tools:context=".activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:id="@+id/rel_layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_kishori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/kishori_amonkar"
+            android:contentDescription="@string/soul_music"
+            />
+
+        <TextView
+            android:id="@+id/tv_dhwani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="@string/dhwani"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="@dimen/drawable_padding"
+            />
+
+        <TextView
+            android:id="@+id/tv_soul_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:text="@string/soul_music"
+            android:textSize="@dimen/text_size_intermediate"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="@dimen/text_padding_medium"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_tracks"
+        style="@style/MyTextViewStyle1"
+        android:text="@string/tracks"
+        android:layout_below="@id/rel_layout_top"
+        android:drawableStart="@drawable/ic_audiotrack"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/tv_artists"
+        style="@style/MyTextViewStyle1"
+        android:text="@string/artists"
+        android:layout_below="@id/tv_tracks"
+        android:drawableStart="@drawable/ic_audiotrack"
+        android:background="@color/colorArtists"
+        />
+
+    <TextView
+        android:id="@+id/tv_albums"
+        style="@style/MyTextViewStyle1"
+        android:text="@string/albums"
+        android:layout_below="@id/tv_artists"
+        android:drawableStart="@drawable/ic_audiotrack"
+        android:background="@color/colorAlbums"
+        />
+</RelativeLayout>

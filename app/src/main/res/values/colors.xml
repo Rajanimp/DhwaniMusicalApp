@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#441A0A</color>
+    <color name="colorPrimaryDark">#320D04</color>
+    <color name="colorAccent">#02B3E4</color>
+    <color name="colorArtists">#5a230d</color>
+    <color name="colorAlbums">#702b11</color>
+    <color name="colorSeekbarBackgroundTint">#873414</color>
+    <color name="now_playing_bg">#FFE9E8</color>
+    <color name="color_bg_main">#c7b2a0</color>
+    <color name="activities_bg">#cc6602</color>
+</resources>
